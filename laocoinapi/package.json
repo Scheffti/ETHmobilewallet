@@ -1,0 +1,42 @@
+{
+  "name": "nodejs-express-mongoose-ethereum-base",
+  "version": "1.0.0",
+  "description": "Basic Node.js Express API with MongoDB and Blockchain (Ethereum)",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "lint": "eslint .",
+    "test": "mocha --timeout 5000 --recursive --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Raphael Odini <raphael.odini@anquancapital.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.11",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.14",
+    "web3": "^1.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "ts-generator": "^0.1.1",
+    "typechain": "^4.0.1"
+  }
+}
