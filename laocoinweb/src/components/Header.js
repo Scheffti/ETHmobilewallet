@@ -9,6 +9,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 import logo from './../res/4478097.png'
+import logo1 from './../res/123.png'
+import logo2 from './../res/195496.png'
 import { width } from '@mui/system';
 
 export default function Header(props) {
@@ -41,7 +43,14 @@ export default function Header(props) {
                     aria-label="menu"
                     sx={{ mr: 2 }}
                 >
-                    <img src={logo} />
+                    {
+                        localStorage.getItem('permission') === 'ministry' || localStorage.getItem('permission') === 'ministry' || localStorage.getItem('permission') === 'heathcenter' ? (<>   <img src={logo2} /></>) : (<> <img src={logo} /></>)
+
+                    }
+                    {
+
+                    }
+
                 </IconButton>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     {props.title}
